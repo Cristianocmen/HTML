@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minha Evolução em HTML</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h3 {
+    color: #333;
+  }
+  button {
+    background-color: transparente;
+    color: #333;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: transparent;
+    color: #555;
+  }
+  ul {
+    list-style-type: none;
+  }
+  footer {
+    margin-top: 10px;
+  }
+</style>
+<script>
+function mostrarOpcoes(opcoesId) {
+  var opcoes = document.getElementById(opcoesId);
+  if (opcoes.style.display === "none") {
+    opcoes.style.display = "block";
+  } else {
+    opcoes.style.display = "none";
+  }
+}
+</script>
+</head>
+<body>
+<h3>Aqui você encontra tudo para sua empresa!</h3>
+<p>Escolha o Serviço Desejado.</p>
+<button onclick="mostrarOpcoes('opcoesFlyer')">Flyer</button>
+	<ul id="opcoesFlyer" style="display:none">
+  <li>Criação</li>
+  <li>Impressão</li>
+</ul>
+<button onclick="mostrarOpcoes('opcoesBanner')">Banner</button>
+	<ul id="opcoesBanner" style="display:none">
+  <li>Tipos</li>
+  <li>Criação</li>
+  <li>Impressão</li>
+</ul>
+<button onclick="mostrarOpcoes('opcoesCartao')">Cartão de Visita</button>
+	<ul id="opcoesCartao" style="display:none">
+  <li>Tipos</li>
+  <li>Criação</li>
+  <li>Impressão</li>
+</ul>
+<button onclick="mostrarOpcoes('opcoesLogo')">Logo</button>
+	<ul id="opcoesLogo" style="display:none">
+  <li>Criação</li>
+</ul>
+<button onclick="mostrarOpcoes('opcoesAdesivo')">Adesivo</button>
+	<ul id="opcoesAdesivo" style="display:none">
+  <li>Adesivo Viníl</li>
+  <li>Etiqueta</li>
+</ul>
+<button onclick="mostrarOpcoes('opcoesIdentidadeVisualMsg')">Identidade Visual</button>
+<p style="display:none" id="opcoesIdentidadeVisualMsg">Crie com a gente sua identidade e receba sua Logo e os princípios da sua identidade para aplicações futuras em diversas artes impressas e digitais.</p>
+<button onclick="mostrarOpcoes('opcoesPapelariaMsg')">Papelaria</button>
+<p style="display:none" id="opcoesPapelariaMsg">Toda sua papelaria completa com cartões de visita, flyers, blocos de notas, adesivos e envelopes.</p>
+<p <footer>Desenvolvido por Cristiano C. Mendonça</footer></p>
+</body>
+</html>
